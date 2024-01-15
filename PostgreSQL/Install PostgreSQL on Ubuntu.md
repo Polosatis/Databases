@@ -10,8 +10,9 @@ Source documentation for intall
 Source documentation for install can be found by the link
 https://www.postgresql.org/download/ with selection of the required operational system or directly for Ubuntu by the link https://www.postgresql.org/download/linux/ubuntu/
 
-Must have requirement is the functional internet connection.
-Then the following steps should be taken
+> [!Important]
+> Must have requirement is the functional internet connection.
+> Then the following steps should be taken
 
 ### Create the file repository configuration:
 
@@ -58,13 +59,14 @@ Change the line of listener to the following:
 listen_addresses = '*'
 ```
 
-If cursor doesn't move but brings letters A B C D on the screen instead, simply use
-
-```
-:set nocompatible
-```
-
-in the vm terminal.
+> [!TIP]
+> If cursor doesn't move but brings letters A B C D on the screen instead, simply use
+>
+> ```
+> :set nocompatible
+> ```
+>
+> in the vm terminal.
 
 Recognize the port number in the next line for connection to database. In my case that is 5432.
 Modify the file '/etc/postgreSQL/16/main/pg_hba.conf'
