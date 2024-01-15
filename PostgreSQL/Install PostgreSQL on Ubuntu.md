@@ -65,3 +65,14 @@ If cursor doesn't move but brings letters A B C D on the screen instead, simply 
 ```
 
 in the vm terminal.
+
+Recognize the port number in the next line for connection to database. In my case that is 5432.
+
+Modify the file '/etc/postgreSQL/16/main/pg_hba.conf'
+Add the following to the bottom
+
+```
+host    all all 0.0.0.0/0   md5
+```
+
+for MD5 encrypted password, or use the default 'scram-sha-256' value instead
