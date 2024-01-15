@@ -94,19 +94,18 @@ Expected result is:
 
 ## Check existing databases and set default password
 
-The default created user is postgres
-Connect to postgreSQL and browse existing databases
+The default created user is 'postgres'. Connect to postgreSQL and browse existing databases
 
 ````
 sudo -u postgres psql
 \l ```(backslash low case L)
 ![Validation of databases](database_list.png)
-
-list users
 ````
 
-\du
+list users
 
+````
+\du
 ```
 ![Users](database_users.png)
 The default user doens't have the password. You have to setup it before start using database.
@@ -121,3 +120,4 @@ The default user doens't have the password. You have to setup it before start us
 ## Connect to your database
 
 After steps above have been complete you should be able to use the preferred tool to connect to the database using IP address, database name "postgres", port "5432", user "postgres" and your password for this user
+````
