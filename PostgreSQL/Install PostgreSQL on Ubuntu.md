@@ -89,4 +89,5 @@ ss -nlt | grep 5432
 ```
 
 Expected result is:
-![Post validation](port.png)
+
+![Port](image_port.png)
