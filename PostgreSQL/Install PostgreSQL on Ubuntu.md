@@ -38,3 +38,30 @@ If you want a specific version, use 'postgresql-12' or similar instead of 'postg
 ```
 sudo apt-get -y install postgresql
 ```
+
+## Configuration of PostgreSQL
+
+```
+cat /etc/postgreSQL/16/main/postgresql.conf
+```
+
+The path shown above is for version 16 of PostgreSQL. You may need to change it according to your current setup.
+Edit the file with admin privileges
+
+```
+sudo vm /etc/postgreSQL/16/main/postgresql.conf
+```
+
+Change the line of listener to the following:
+
+```
+listen_addresses = '*'
+```
+
+If cursor doesn't move but brings letters A B C D on the screen instead, simply use
+
+```
+:set nocompatible
+```
+
+in the vm terminal.
