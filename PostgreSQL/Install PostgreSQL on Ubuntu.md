@@ -12,7 +12,8 @@ https://www.postgresql.org/download/ with selection of the required operational 
 
 > [!Important]
 > Must have requirement is the functional internet connection.
-> Then the following steps should be taken
+
+Next the following steps should be taken
 
 ### Create the file repository configuration:
 
