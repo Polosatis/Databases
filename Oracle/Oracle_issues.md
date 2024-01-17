@@ -1,11 +1,14 @@
 This document describes the issues which may be faces when deploying Oracle 21c from container
 
-# Error while connection to database from the outside of connector
+# Error while connection to database from the outside of connector ORA-12514: TNS:listener does not currently know of service requested in connect descriptor
 
 ## Issue
 
 ou can succesfully connect from the container by using the sqlplus and you are able to successfully poerform any operation inside, including setting up users/schemas, changing passwords, creation of the objects, but the connextion from outside of container fails with the error
 ![ORA-12514](img/oracle_error_ORA-12514.png)
+
+Also valid for
+`ORA-12505, TNS:listener does not currently know of SID given in connect descriptor`
 
 ## Resolution
 
