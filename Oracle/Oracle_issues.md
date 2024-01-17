@@ -4,7 +4,7 @@ This document describes the issues which may be faces when deploying Oracle 21c 
 
 ## Issue
 
-ou can succesfully connect from the container by using the sqlplus and you are able to successfully poerform any operation inside, including setting up users/schemas, changing passwords, creation of the objects, but the connextion from outside of container fails with the error
+When you can succesfully connect from the container by using the sqlplus, can perform any operation inside, including setting up users/schemas, changing passwords, creation of the objects, but the connection from outside of container fails with the error
 ![ORA-12514](img/oracle_error_ORA-12514.png)
 
 Also valid for
