@@ -93,7 +93,7 @@ ss -nlt | grep 5432
 
 Expected result is:
 
-![Port](image_port.png)
+![Port](/PostgreSQL/images/image_port.png)
 
 ## Check existing databases and set default password
 
@@ -104,21 +104,21 @@ sudo -u postgres psql
 \l ```(backslash low case L)
 ````
 
-![Validation of databases](database_list.png)
+![Validation of databases](/PostgreSQL/images/database_list.png)
 List users with the command:
 
 ```
 \du
 ```
 
-![Users](database_users.png)
+![Users](/PostgreSQL/images/database_users.png)
 The default user doens't have the password. You have to setup it before start using database.
 
 ```
 \password postgres
 ```
 
-![Password](database_password.png)
+![Password](/PostgreSQL/images/database_password.png)
 
 ## Connect to your database
 
